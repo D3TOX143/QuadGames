@@ -1,0 +1,101 @@
+/* Font Family */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;600&display=swap');
+
+/* CSS Reset  */
+* { padding: 0; margin: 0; box-sizing: border-box;}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;       
+    /* Relative to rem measurement i.e. 1 rem === 16px*/
+    background: black;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: blanchedalmond;
+}
+
+section {
+    height: 100vh;
+}
+
+.highlight {
+    color: chartreuse;
+}
+
+.container {
+
+}
+
+/* Nav Bar CSS */
+
+.nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* Aligns equal space on left and right 
+    so our content goes in center */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.6rem;
+    height: 5rem;
+    background-color: black;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-list li {
+    font-size: 1.6rem;
+    /* 1.6rem = 1.6 * 16px */
+    padding: 20px;
+    margin: 0 8px;
+}
+
+#logo {
+    font-size: 1.6rem;
+    margin: 0 0 0 1rem;
+    color: blanchedalmond;
+}
+
+.logo:hover {
+    color: chartreuse !important;
+}
+
+.nav .nav-list .btn:hover {
+    border-top: 2px solid chartreuse;
+    border-bottom: 2px solid chartreuse;
+    border-radius: 7px;
+    color: chartreuse;
+}
+
+/* End of Nav Bar CSS */
+
+/* Home Page CSS */
+
+.welcome {
+    position: absolute;
+    color: blanchedalmond;
+    font-size: 4rem;
+    top: 50%;
+    left: 25%;
+}
+
+/* Games Page CSS */
+
+#games {
+    background-color: blanchedalmond;
+}
+
+#contact {
+    background-color: black;
+}
+
+#about-us {
+    background-color: blanchedalmond;
+}
