@@ -86,7 +86,7 @@ section {
 .banner {
   margin-top: 1.2rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -141,3 +141,62 @@ section {
 }
 
 /* Games Page CSS */
+
+/* Responsice CSS */
+
+@media only screen and (max-width: 700px) {
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-list li {
+    font-size: 0.8rem;
+    margin: 0 0.1rem;
+    padding: 1rem;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+
+  .banner {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1rem;
+  }
+
+  .col-1 {
+    z-index: 1;
+    margin-left: 5rem;
+    top: 20rem;
+  }
+
+  .welcome {
+    font-size: 2.3rem;
+    line-height: 50px;
+  }
+
+  .desc {
+    font-size: 0.8rem;
+    margin: 0 0.2rem;
+  }
+
+  .col2 {
+    grid-column: 1 / -1;
+  }
+
+  .col-2 .home-img {
+    position: relative;
+    width: 30vh;
+    height: 70vh;
+    left: 15rem;
+  }
+
+  .color-box {
+    width: 100%;
+    border-radius: 10rem 0 0 5rem;
+  }
+}
