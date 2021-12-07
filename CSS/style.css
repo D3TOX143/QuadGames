@@ -40,6 +40,10 @@ section {
   overflow: hidden;
 }
 
+.box-color {
+  background: #9fc2cc;
+}
+
 .highlight {
   color: black;
 }
@@ -65,7 +69,6 @@ section {
 
 .nav-list li {
   font-size: 1.4rem;
-  /* 1.6rem = 1.6 * 16px */
   padding: 20px;
   margin: 0 8px;
 }
@@ -128,7 +131,6 @@ section {
   position: absolute;
   right: 0;
   top: 0;
-  background: #9fc2cc;
   height: 100%;
   width: 80%;
   border-radius: 8rem 2rem 8rem 0;
@@ -141,6 +143,24 @@ section {
 }
 
 /* Games Page CSS */
+
+#games-jar {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-around;
+  align-items: center;
+}
+
+.game-box {
+  width: 30%;
+  height: 80%;
+  margin: 1.5rem;
+  border-radius: 8rem 2rem;
+}
+
+.game-box:hover {
+  transform: skewY(10deg);
+}
 
 /* Responsice CSS */
 
@@ -192,11 +212,23 @@ section {
     position: relative;
     width: 30vh;
     height: 70vh;
-    left: 15rem;
+    left: 16rem;
   }
 
   .color-box {
     width: 100%;
     border-radius: 10rem 0 0 5rem;
+  }
+
+  /* Games CSS */
+
+  #games {
+    flex-direction: column;
+  }
+
+  .game-box {
+    width: 100%;
+    margin: 1rem;
+    border-radius: 8rem 2rem;
   }
 }
