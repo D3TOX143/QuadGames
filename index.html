@@ -1,57 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="CSS/style.css" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <title>QuadGames</title>
-  </head>
-  <body>
-    <div class="container">
-      <section id="home">
-        <div class="nav">
-          <div id="logo">
-            <h1><a href="#" class="logo">QuadGames</a></h1>
-          </div>
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+         rel="shortcut icon"
+         href="./images/favicon.png"
+         type="image/x-icon"
+      />
+      <link rel="stylesheet" href="CSS/style.css" />
+      <link rel="stylesheet" href="./CSS/slider.css" />
+      <link
+         href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+         rel="stylesheet"
+      />
+      <title>QuadGames</title>
+   </head>
+   <body>
+      <div class="container">
+         <section id="home">
+            <div class="nav">
+               <div id="logo">
+                  <h1><a href="#" class="logo">QuadGames</a></h1>
+               </div>
 
-          <ul class="nav-list">
-            <li class="link"><a href="#games-jar" class="btn">Our Games</a></li>
-            <li class="link"><a href="#" class="btn">Contact Us</a></li>
-            <li class="link"><a href="#" class="btn">About Us</a></li>
-          </ul>
-        </div>
+               <ul class="nav-list">
+                  <li class="link">
+                     <a href="#games-jar" class="btn">Our Games</a>
+                  </li>
+                  <li class="link"><a href="#" class="btn">Contact Us</a></li>
+                  <li class="link"><a href="#" class="btn">About Us</a></li>
+               </ul>
+            </div>
 
-        <div class="banner">
-          <div class="col-1">
-            <h2 class="welcome">
-              Welcome to <span class="highlight">QuadGames</span>
-            </h2>
-            <p class="desc">Group of independent developers.</p>
-          </div>
+            <div class="banner">
+               <div class="col-1">
+                  <h2 class="welcome">
+                     Welcome to <span class="highlight">QuadGames</span>
+                  </h2>
+                  <p class="desc">Group of independent developers.</p>
+               </div>
 
-          <div class="col-2">
-            <img
-              src="images/homepge-removebg.png"
-              alt="a boy holding a gun in-game"
-              class="home-img"
-            />
-            <div class="color-box box-color"></div>
-          </div>
-        </div>
-      </section>
+               <div class="col-2">
+                  <img
+                     src="images/homepge-removebg.png"
+                     alt="a boy holding a gun in-game"
+                     class="home-img"
+                  />
+                  <div class="color-box box-color"></div>
+               </div>
+            </div>
+         </section>
 
-      <section id="games-jar">
-        <div class="game-box box-1 box-color"></div>
-        <div class="game-box box-2 box-color"></div>
-        <div class="game-box box-3 box-color"></div>
-      </section>
-      <!-- <section id="contact"></section> -->
-      <!-- <section id="about-us"></section> -->
-    </div>
-  </body>
+         <section id="games-jar">
+            <div class="slider">
+               <h2 class="head2">Check out our games.</h2>
+               <div class="previous arrow"></div>
+               <div class="slide slide1"></div>
+               <div class="slide slide2"></div>
+               <div class="slide slide3"></div>
+               <div class="slide slide4"></div>
+               <div class="next arrow"></div>
+            </div>
+         </section>
+         <!-- <section id="contact"></section> -->
+         <!-- <section id="about-us"></section> -->
+      </div>
+      <script src="/JS/slider.js"></script>
+   </body>
 </html>
